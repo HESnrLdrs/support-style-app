@@ -1,6 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+.app-header {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 1rem;
+}
+.app-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.site-logo {
+    font-weight: 600;
+    color: #2c5aa0;
+    text-decoration: none;
+}
+.breadcrumb a {
+    color: #6c757d;
+    text-decoration: none;
+}
+</style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership Development Style Assessment</title>
@@ -12,7 +36,14 @@
             box-sizing: border-box;
         }
 
-        body {
+        body <div class="app-header">
+    <div class="app-nav">
+        <a href="../index.html" class="site-logo">Senior Academic Transformations</a>
+        <div class="breadcrumb">
+            <a href="../apps.html">Apps</a> > <span>Support Style Finder</span>
+        </div>
+    </div>
+</div>{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
