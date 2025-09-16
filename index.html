@@ -534,7 +534,27 @@
         }
     </style>
 </head>
-<body>
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()" style="position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#1e3a5f,#2c5aa0);color:white;border:none;border-radius:50%;width:50px;height:50px;cursor:pointer;font-size:18px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:1000;opacity:0;transition:all 0.3s;">↑</button>
+
+<script>
+window.onscroll = function() {
+    const btn = document.getElementById('backToTop');
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btn.style.opacity = '1';
+        btn.style.visibility = 'visible';
+    } else {
+        btn.style.opacity = '0';
+        btn.style.visibility = 'hidden';
+    }
+};
+
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    <body>
     <div class="app-header">
     <div class="app-nav">
         <a href="../index.html" class="site-logo">Senior Academic Transformations</a>
